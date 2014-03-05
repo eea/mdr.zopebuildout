@@ -102,7 +102,7 @@ https://svn.eionet.europa.eu/repositories/Zope/trunk/Products.Reportek/ ::
   $ git clone https://github.com/eea/mdr.zopebuildout zope
   $ virtualenv staging-venv
   $ . staging-venv/bin/activate
-  $ pip install -r zope/requirements-staging.txt
+  $ pip install -r zope/requirements.txt
   $ cd zope
   $ ./bin/buildout -c staging.cfg
   $ ./bin/supervisorctl reload 1>/dev/null || .bin/supervisord
