@@ -85,6 +85,8 @@ http://eggshop.eaudeweb.ro/ ::
   $ cd /var/local/mdr/production
   $ . prod-venv/bin/activate
   $ cd zope
+  $ curl -O http://downloads.buildout.org/2/bootstrap.py
+  $ python bootstrap.py
   $ ./bin/buildout -c production.cfg
   $ ./bin/supervisorctl reload 1>/dev/null || .bin/supervisord
 
@@ -104,6 +106,8 @@ https://svn.eionet.europa.eu/repositories/Zope/trunk/Products.Reportek/ ::
   $ . staging-venv/bin/activate
   $ pip install -r zope/requirements.txt
   $ cd zope
+  $ curl -O http://downloads.buildout.org/2/bootstrap.py
+  $ python bootstrap.py
   $ ./bin/buildout -c staging.cfg
   $ ./bin/supervisorctl reload 1>/dev/null || .bin/supervisord
 
@@ -121,6 +125,8 @@ but has always-checkout = false so that you can control the version of your sour
   $ . devel-venv/bin/activate
   $ pip install -r zope/requirements-dev.txt
   $ cd zope
+  $ curl -O http://downloads.buildout.org/2/bootstrap.py
+  $ python bootstrap.py
   $ ./bin/buildout -c devel.cfg
   $ ./bin/instance
 
