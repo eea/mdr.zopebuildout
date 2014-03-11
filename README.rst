@@ -121,7 +121,7 @@ Edit secret.cfg and change all the passwords.
 Run buildout using the staging.cfg configuration::
 
   $ ./bin/buildout -c staging.cfg
-  $ ./bin/supervisorctl reload 1>/dev/null || .bin/supervisord
+  $ ./bin/supervisorctl reload 1>/dev/null || ./bin/supervisord
 
 
 Build devel
