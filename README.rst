@@ -87,6 +87,12 @@ http://eggshop.eaudeweb.ro/ ::
   $ cd zope
   $ curl -O http://downloads.buildout.org/2/bootstrap.py
   $ python bootstrap.py
+  $ cp secret.cfg.sample secret.cfg
+  $ vim secret.cfg
+
+Edit secret.cfg and change all the passwords. This file should not be added to Git because it is secret :).
+Run buildout using the production.cfg configuration ::
+
   $ ./bin/buildout -c production.cfg
   $ ./bin/supervisorctl reload 1>/dev/null || .bin/supervisord
 
@@ -108,6 +114,12 @@ https://svn.eionet.europa.eu/repositories/Zope/trunk/Products.Reportek/ ::
   $ cd zope
   $ curl -O http://downloads.buildout.org/2/bootstrap.py
   $ python bootstrap.py
+  $ cp secret.cfg.sample secret.cfg
+  $ vim secret.cfg
+
+Edit secret.cfg and change all the passwords.
+Run buildout using the staging.cfg configuration::
+
   $ ./bin/buildout -c staging.cfg
   $ ./bin/supervisorctl reload 1>/dev/null || .bin/supervisord
 
@@ -127,6 +139,12 @@ but has always-checkout = false so that you can control the version of your sour
   $ cd zope
   $ curl -O http://downloads.buildout.org/2/bootstrap.py
   $ python bootstrap.py
+  $ cp secret.cfg.sample secret.cfg
+  $ vim secret.cfg
+
+Edit secret.cfg and change all the passwords.
+Run buildout using the devel.cfg configuration::
+
   $ ./bin/buildout -c devel.cfg
   $ ./bin/instance
 
