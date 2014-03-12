@@ -101,7 +101,7 @@ Check logs/supervisor.log to see if all the procs started
 
 Build staging
 -------------
-This deployment is what runns behind https://mdr-test.eionet.europa.eu/
+This deployment is what runnings behind https://mdr-test.eionet.europa.eu/
 Note that staging will user Products.Reportek from sources (through mr.developer)
 https://svn.eionet.europa.eu/repositories/Zope/trunk/Products.Reportek/ ::
 
@@ -164,13 +164,8 @@ Other people involved in this project are::
 
 
 =========
-Resources
-=========
-
-
 Hardware
---------
-
+=========
 Minimum requirements:
  * 1024MB RAM
  * 1 CPU 1.8GHz or faster
@@ -182,16 +177,9 @@ Recommended:
  * 8GB hard disk space
 
 
-Software
---------
-
-Any recent Linux version.
-apache2, local ldap server
-
 =====================
 Copyright and license
 =====================
-
 Copyright 2007 European Environment Agency (EEA)
 
 Licensed under the EUPL, Version 1.1 or – as soon they will be approved
